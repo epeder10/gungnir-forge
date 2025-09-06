@@ -1,0 +1,10 @@
+name: gungnir-forge/path-conditions
+version: 1.0.0
+description: Enhanced CodeQL queries for extracting path conditions and validation logic
+author: Gungnir Forge Security Team
+
+dependencies:
+  codeql/javascript-all: "*"
+
+libraryPathDependencies:
+  - codeql/javascript-all

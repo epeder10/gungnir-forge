@@ -1,0 +1,46 @@
+{
+  "name": "gungnir-forge-path-conditions",
+  "version": "1.0.0",
+  "description": "Enhanced CodeQL queries for extracting path conditions and validation logic",
+  "author": "Gungnir Forge Security Team",
+  "license": "MIT",
+  "queries": [
+    {
+      "name": "comprehensive-flow-extraction",
+      "path": "comprehensive-flow-extraction.ql",
+      "description": "Extracts all types of conditions, validations, and path constraints",
+      "kind": "problem"
+    },
+    {
+      "name": "authentication-flow-analysis", 
+      "path": "authentication-flow-analysis.ql",
+      "description": "Analyzes authentication and authorization patterns",
+      "kind": "problem"
+    },
+    {
+      "name": "input-validation-analysis",
+      "path": "input-validation-analysis.ql", 
+      "description": "Identifies validation patterns and security vulnerabilities",
+      "kind": "problem"
+    }
+  ],
+  "libraries": [
+    {
+      "name": "PathConditions",
+      "path": "lib/PathConditions.qll",
+      "description": "Core predicates for path condition analysis"
+    },
+    {
+      "name": "ConstraintAnalysis", 
+      "path": "lib/ConstraintAnalysis.qll",
+      "description": "Advanced constraint and input validation analysis"
+    }
+  ],
+  "tests": [
+    {
+      "name": "test-basic-extraction",
+      "path": "tests/test-basic-extraction.ql",
+      "description": "Basic functionality test"
+    }
+  ]
+}
